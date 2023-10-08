@@ -401,18 +401,24 @@ img{
 }
 
 /*COMPRAR*/
+
+.galeria2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+    max-width: 100rem;
+    margin: auto;
+}
 @media (min-width:760px) {
-    .cont_grid{
-       margin-top: 2rem;
-       max-width: 100%;
-       font-size: 6rem;
-    }
+
 }
 .aux{
     max-width: 90rem;
 }
 .swiper2 {
-    width: 100%;
+    max-width: 100rem;
     height: 50rem;
     overflow: hidden;
 }
@@ -486,6 +492,7 @@ button:hover {
 #abrirCarrito{
     padding: 3rem;
     font-size: 2rem;
+    margin: auto;
 }
 
 /*FOOTER*/
