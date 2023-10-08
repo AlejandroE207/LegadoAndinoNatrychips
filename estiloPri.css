@@ -405,6 +405,7 @@ img{
     .cont_grid{
        margin-top: 2rem;
        max-width: 100%;
+       font-size: 6rem;
     }
 }
 .aux{
@@ -425,7 +426,7 @@ img{
     color: var(--morado1);
 }
 .product p, .product label{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 label{
     padding:1rem;
