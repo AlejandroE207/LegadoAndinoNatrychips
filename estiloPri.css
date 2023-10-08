@@ -408,7 +408,7 @@ img{
     flex-direction: column;
     justify-content: center;
     z-index: 999;
-    max-width: 80rem;
+    max-width: 60rem;
     margin: auto;
 }
 @media (min-width:760px) {
