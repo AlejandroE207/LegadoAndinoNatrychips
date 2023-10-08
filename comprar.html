@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estiloPri.css">
+    <link rel="icon" href="img/logoIcono.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alkatra&display=swap" rel="stylesheet">
+    <title>Legado Andino Natychips</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="wrapper-logo">
+                <a href="index.html">
+                    <img class="logo" loading="lazy" src="img/logoSinFondo.png" alt="Logo">
+                </a>
+                <a href="index.html" class="titulo">
+                    LEGADO ANDINO NATYCHIPS
+                </a>
+            </div>
+
+            <nav class="menu_principal contenedor">
+                <a href="index.html" class="menu_li_a">Producto</a>
+                <a href="nosotros.html" class="menu_li_a">Nosotros</a>
+                <a href="comprar.html" class="menu_li_a">Comprar</a>
+                <a href="competencia.html" class="menu_li_a">Competencia</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="galeria cont_grid">
+            <div class="aux">
+                <div class="swiper2 mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/empaqueTotal.jpg" class="gale1"></div>
+                        <div class="swiper-slide"><img src="img/tablaNutricional.jpg" class="gale2"></div>
+                        <div class="swiper-slide"><img src="img/logoFondoBlanco.jpg" class="gale3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        
+            <div class="product">
+                <h1>NATYCHIPS</h1>
+                <p>Precio va de $9500 hasta $15000</p>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" value="1" class="inputNum">
+                <label for="tamanio">Tamaño:</label>
+                <select id="tamanio">
+                    <option value="small">150gr ($9500)</option>
+                    <option value="medium">250gr ($12000)</option>
+                    <option value="large">350gr ($15000)</option>
+                </select>
+                <button id="agregarAlCarrito">Agregar al Carrito</button>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script src="swiper.js"></script>
+</section>
+        
+
+        <button id="abrirCarrito">Abrir Carrito</button>
+
+        <div id="modalCarrito" class="modal">
+            <div class="modal-content">
+                <span class="close" id="cerrarCarrito">&times;</span>
+                <div class="">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="carritoLista">
+                    </ul>
+                    <p>Total: $<span id="total">0</span></p>
+                    <button id="realizarCompra">Realizar Compra</button>
+                </div>
+            </div>
+
+            <script src="carrito.js"></script>
+            <script src="abrirCarrito.js"></script>
+    </main>
+</body>
+
+</html>
