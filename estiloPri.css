@@ -42,6 +42,7 @@ h1,h2,h3{
 img{
     max-width: 100%;
     border: none;
+    object-fit: cover;
 }
 .main{
     background: rgb(252,220,255);
@@ -184,6 +185,11 @@ img{
     z-index: 999;
     max-width: 90rem;
     margin: auto;
+}
+@media (max-width:320px) {
+    .galeria{
+        max-height: 40rem;
+    } 
 }
 .swiper {
     width: 100%;
