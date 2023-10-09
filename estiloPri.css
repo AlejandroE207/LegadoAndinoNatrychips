@@ -42,7 +42,7 @@ h1,h2,h3{
 img{
     max-width: 100%;
     border: none;
-    object-fit: cover;
+    object-fit: contain;
 }
 .main{
     background: rgb(252,220,255);
